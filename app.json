@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/canvas/canvas"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#ffffff"
+  }
+}
