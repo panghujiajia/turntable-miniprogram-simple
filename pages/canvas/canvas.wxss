@@ -24,15 +24,6 @@ page {
     background-clip: padding-box;
     background-color: #ffcb3f;
 }
-
-.canvas-element {
-    position: relative;
-    z-index: 1;
-    width: inherit;
-    height: inherit;
-    border-radius: 50%;
-}
-
 .canvas-list {
     position: absolute;
     left: 0;
