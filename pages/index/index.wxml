@@ -11,5 +11,5 @@
             </view>
         </view>
     </view>
-    <view bindtap="start" class="btn">抽奖</view>
+    <image bindtap="start" class="btn" src="/images/tbar-pointer.png"></image>
 </view>
