@@ -1,6 +1,6 @@
 {
   "pages":[
-    "pages/canvas/canvas"
+    "pages/index/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

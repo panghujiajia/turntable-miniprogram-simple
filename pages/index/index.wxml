@@ -1,0 +1,15 @@
+<view class="container">
+    <view animation="{{animationData}}" class="content">
+        <view class="line">
+            <view class="litem" wx:for="{{awards}}" wx:key="unique" style="-webkit-transform: rotate({{item.lineTurn}});transform: rotate({{item.lineTurn}})"></view>
+        </view>
+
+        <view class="list">
+            <view class="item" wx:for="{{awards}}" wx:key="unique">
+                <view class="item-text" style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}})">{{item.name}}</view>
+            </view>
+        </view>
+    </view>
+
+    <view bindtap="start" class="btn">抽奖</view>
+</view>

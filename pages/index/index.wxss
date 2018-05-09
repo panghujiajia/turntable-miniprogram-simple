@@ -3,7 +3,7 @@ page {
 }
 
 /* 转盘 */
-.canvas-container {
+.container {
     margin: 120px auto 0;
     position: relative;
     width: 300px;
@@ -12,7 +12,7 @@ page {
     box-shadow: 0 2px 3px #333, 0 0 2px #000;
 }
 
-.canvas-content {
+.content {
     position: absolute;
     left: 0;
     top: 0;
@@ -24,7 +24,7 @@ page {
     background-clip: padding-box;
     background-color: #ffcb3f;
 }
-.canvas-list {
+.list {
     position: absolute;
     left: 0;
     top: 0;
@@ -33,7 +33,7 @@ page {
     z-index: 9999;
 }
 
-.canvas-item {
+.item {
     position: absolute;
     left: 0;
     top: 0;
@@ -44,7 +44,7 @@ page {
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
 }
 
-.canvas-item-text {
+.item-text {
     position: relative;
     display: block;
     padding-top: 20px;
@@ -57,7 +57,7 @@ page {
 
 /* 分隔线 */
 
-.canvas-line {
+.line {
     position: absolute;
     left: 0;
     top: 0;
@@ -66,7 +66,7 @@ page {
     z-index: 99;
 }
 
-.canvas-litem {
+.litem {
     position: absolute;
     left: 150px;
     top: 0;
@@ -78,7 +78,7 @@ page {
     transform-origin: 50% 150px;
 }
 
-.canvas-btn {
+.btn {
     position: absolute;
     left: 110px;
     top: 110px;
@@ -96,7 +96,7 @@ page {
     text-decoration: none;
 }
 
-.canvas-btn::after {
+.btn::after {
     position: absolute;
     display: block;
     content: ' ';
@@ -111,13 +111,13 @@ page {
     border-bottom-color: #e44025;
 }
 
-.canvas-btn.disabled {
+.btn.disabled {
     pointer-events: none;
     background: #b07a7b;
     color: #ccc;
 }
 
-.canvas-btn.disabled::after {
+.btn.disabled::after {
     border-bottom-color: #b07a7b;
 }
 
