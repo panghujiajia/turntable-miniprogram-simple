@@ -3,6 +3,7 @@ page {
 }
 
 /* 转盘 */
+
 .container {
     margin: 120px auto 0;
     position: relative;
@@ -24,13 +25,19 @@ page {
     background-clip: padding-box;
     background-color: #ffcb3f;
 }
-.list {
+
+/* 分隔线 */
+
+.litem {
     position: absolute;
-    left: 0;
+    left: 150px;
     top: 0;
-    width: inherit;
-    height: inherit;
-    z-index: 9999;
+    width: 1px;
+    height: 150px;
+    background-color: rgba(228, 55, 14, 0.4);
+    overflow: hidden;
+    -webkit-transform-origin: 50% 150px;
+    transform-origin: 50% 150px;
 }
 
 .item {
@@ -53,29 +60,6 @@ page {
     -webkit-transform-origin: 50% 150px;
     transform-origin: 50% 150px;
     font-size: 26rpx;
-}
-
-/* 分隔线 */
-
-.line {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: inherit;
-    height: inherit;
-    z-index: 99;
-}
-
-.litem {
-    position: absolute;
-    left: 150px;
-    top: 0;
-    width: 1px;
-    height: 150px;
-    background-color: rgba(228, 55, 14, 0.4);
-    overflow: hidden;
-    -webkit-transform-origin: 50% 150px;
-    transform-origin: 50% 150px;
 }
 
 .btn {
@@ -109,19 +93,4 @@ page {
     border-style: solid;
     border-color: transparent;
     border-bottom-color: #e44025;
-}
-
-.btn.disabled {
-    pointer-events: none;
-    background: #b07a7b;
-    color: #ccc;
-}
-
-.btn.disabled::after {
-    border-bottom-color: #b07a7b;
-}
-
-.gb-run {
-    -webkit-transition: all 6s ease;
-    transition: all 6s ease;
 }

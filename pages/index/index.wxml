@@ -1,15 +1,15 @@
+<!-- 转盘容器 -->
 <view class="container">
+    <!-- 转盘主体 -->
     <view animation="{{animationData}}" class="content">
-        <view class="line">
-            <view class="litem" wx:for="{{awards}}" wx:key="unique" style="-webkit-transform: rotate({{item.lineTurn}});transform: rotate({{item.lineTurn}})"></view>
-        </view>
-
-        <view class="list">
-            <view class="item" wx:for="{{awards}}" wx:key="unique">
-                <view class="item-text" style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}})">{{item.name}}</view>
+        <!-- 转盘的线 -->
+        <view class="litem" wx:for="{{awards}}" wx:key="unique" style="-webkit-transform: rotate({{item.lineTurn}});transform: rotate({{item.lineTurn}})"></view>
+        <!-- 转盘奖品 -->
+        <view class="item" wx:for="{{awards}}" wx:key="unique">
+            <view class="item-text" style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}})">
+                {{item.name}}
             </view>
         </view>
     </view>
-
     <view bindtap="start" class="btn">抽奖</view>
 </view>
