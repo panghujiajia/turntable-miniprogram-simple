@@ -63,10 +63,11 @@ page {
 
 .btn {
     position: absolute;
-    left: 50%;
-    margin-left:-50px;
-    margin-top:-50px;
-    top:50%;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    margin:auto;
     z-index: 400;
     width: 100px;
     height: 100px;
